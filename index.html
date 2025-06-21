@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Simulador de Encontro 💘</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Simulador de Encontro 💑</h1>
+
+    <label for="local">Escolhe o local do encontro:</label>
+    <select id="local">
+      <option value="cinema">Cinema</option>
+      <option value="restaurante">Restaurante</option>
+      <option value="praia">Praia</option>
+    </select>
+
+    <label for="fala">O que queres dizer?</label>
+    <select id="fala">
+      <option value="gostei">Gostei muito de estar contigo ❤️</option>
+      <option value="linda">Estás tão linda hoje 😍</option>
+      <option value="abraço">Posso-te dar um abraço? 🤗</option>
+    </select>
+
+    <button onclick="simular()">Simular Encontro</button>
+
+    <div id="resultado" class="resultado"></div>
+  </div>
+
+  <audio id="musica" src="musica.mp3" preload="auto"></audio>
+  <script src="script.js"></script>
+</body>
+</html>
